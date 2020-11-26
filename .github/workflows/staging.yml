@@ -1,4 +1,4 @@
-name: Push Container to Heroku on production
+name: Push Container to Heroku on staging
 
 on: 
   push:
