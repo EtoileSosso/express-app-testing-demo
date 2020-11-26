@@ -1,6 +1,9 @@
 name: Push Heroku Container on staging
 
-on: [push]
+on: 
+  push:
+    branches:
+      - develop
 
 jobs:
   build:
