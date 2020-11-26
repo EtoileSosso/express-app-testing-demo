@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/EtoileSosso/express-app-testing-demo/badge.svg?branch=main)](https://coveralls.io/github/EtoileSosso/express-app-testing-demo?branch=main)
+
 # express-app-testing-demo
 
 This project is a simple express app for demonstrating testing and code coverage.
