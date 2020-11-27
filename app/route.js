@@ -4,6 +4,7 @@ const {PubSub} = require('@google-cloud/pubsub');
 const env = require('../app/public/json/lejson.json');
 const moment = require('moment');
 const {Storage} = require('@google-cloud/storage');
+const request = require('request');
 
 function route(app) {
     app.get('/', (req, res) => {
@@ -84,7 +85,7 @@ function route(app) {
     app.get('/download-zip', (req, res) => {
         async function getFile() {
             const options = {
-                actions: 'read',
+                action: 'read',
                 expires: moment().add(2, 'days').unix() * 1000,
             }
             const credentials = {
@@ -96,6 +97,10 @@ function route(app) {
             const signedUrls = await storage.bucket('dmii2bucket')
                 .file('public/users/sonia.zip')
                 .getSignedUrl(options);
+
+            if (signedUrls) {
+                res.redirect(signedUrls);
+            }
         }
 
         getFile();
