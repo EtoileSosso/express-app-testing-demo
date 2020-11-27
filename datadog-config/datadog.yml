@@ -4,4 +4,4 @@ dd_url: https://app.datadoghq.com
 # Can be found here:
 # https://app.datadoghq.com/account/settings
 api_key: 9d0f1bbbb097633d13dd92c81a6f7e2c
-log_level: info
+log_level: debug
