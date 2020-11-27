@@ -22,6 +22,7 @@
     "dotenv": "^8.2.0",
     "ejs": "~2.5.7",
     "express": "~4.16.2",
+    "firebase": "^8.1.1",
     "got": "^8.0.1",
     "moment": "^2.29.1",
     "request": "^2.88.2",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^4.12.1",
+    "firebase-admin": "^9.4.1",
     "jest": "^21.2.1",
     "nodemon": "^1.12.5",
     "prettier": "^1.9.1",
